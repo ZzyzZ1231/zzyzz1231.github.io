@@ -1,0 +1,73 @@
+---
+import BaseLayout from "../../layouts/BaseLayout.astro";
+---
+
+<BaseLayout>
+  <div class="max-w-3xl mx-auto py-12">
+    <h1 class="text-4xl font-bold mb-4">
+      Position Feedback System for ARTMS
+    </h1>
+
+   <div class="flex justify-between items-center mb-8">
+      <p class="text-lg text-gray-600">
+        Embedded Systems Lead
+      </p>
+      
+      <p class="text-lg text-gray-600">
+        Sep 2024 – Present
+      </p>
+</div>
+
+    <div class="space-y-6">
+      <div>
+        <h2 class="text-2xl font-semibold">Overview</h2>
+        <p> Designing a distributed sensor checkpoint system for
+          <a href="https://artms.ca/qis-ecosystem/" target="_blank" class="underline font-medium">ARTMS QIS Ecosystem </a>
+          to provide real-time positional feedback of radioactive capsules traveling inside a sealed pneumatic
+        transfer hose within a radiation-constrained environment.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-semibold">Problem</h2>
+        <ul class="list-disc ml-6">
+          <li>ARTMS relies on shielded pneumatic transport lines to move radioactive capsules between stations. In failure cases, capsules get stuck inside the transfer hose</li>
+          <li>The environment prevents visual inspection, making the capsule's exact position unknown. This lack of visibility leads to production delays, inefficient troubleshooting, and reduced system throughput</li>
+        </ul>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-semibold">Solution</h2>
+        <p>I am designing a sensor checkpoint system to provide real-time position feedback of the capsule inside the hose. The system architecture I designed is:</p>
+          <img
+            src="/capstone_feedback_system_architecture.svg"
+            alt="Capstone system architecture diagram"
+            class="w-full max-w-3xl my-8"
+          />
+          <p>All of the sensor PCBs and main board run FreeRTOS. Each sensor PCB performs sensor fusion locally and transmits its status to the main board via CAN bus.</p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-semibold">Impact</h2>
+        <p>
+          The solution provides a real-time capsule feedback system connected to the client's HMI. This feedback system would reduce production delays while increasing throughput of the system.
+        </p>
+      </div>
+
+      <div>
+        <h2 class="text-2xl font-semibold">Technical Details</h2>
+        <p>I designed the PCB schematics in Altium:</p>
+        
+          <div class="my-10">
+          <iframe
+            src="/sensorPCB_schematics.pdf"
+            class="w-full h-[700px] border rounded-lg"
+          ></iframe>
+          </div>
+
+         <p> PCB layout is currently in progress!</p>
+      </div>
+
+    </div>
+  </div>
+</BaseLayout>

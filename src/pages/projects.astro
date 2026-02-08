@@ -1,0 +1,77 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import HorizontalCard from "../components/HorizontalCard.astro";
+---
+
+<BaseLayout title = "Projects" sideBarActiveItemID="projects">
+  <div>
+    <div class="text-3xl w-full font-bold mb-5">Projects</div>
+  </div>
+
+  <HorizontalCard
+    title="Position Feedback System for ARTMS - Capstone"
+    img="/artms_overview.webp"
+    desc="Designing a distributed sensor checkpoint system to provide real-time positional feedback of radioactive capsules traveling inside a sealed pneumatic transfer hose within a radiation-constrained environment"
+    url="/projects/position_feedback_system_artms_capstone"
+    badge="Ongoing"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Power Monitoring Sensor @Bosch"
+    img="/Bosch_Logo.webp"
+    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    url="/projects/power_monitoring_sensor_bosch"
+  />
+
+    <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Automated Salad Making Robot @Cibotica"
+    img="/remy_cibotica.webp"
+    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    url="/projects/automated_salad_making_robot_cibotica"
+  />
+
+    <div class="divider my-0"></div>
+
+
+  <HorizontalCard
+    title="Canadarm2 Modeling & Control"
+    img="/canadarm2.webp"
+    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    url="/projects/canadarm2"
+  />
+
+    <div class="divider my-0"></div>
+  <HorizontalCard
+    title="PSIM Flyback Converter Design"
+    img="/flyback_converter.webp"
+    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    url="/projects/psim_flyback_converter_design"
+  />
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Buck Converter State-Space Control"
+    img="/state_space_buck_converter.webp"
+    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    url="/projects/buck_converter_state_space_control"
+  />
+
+  
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Unmanned Systems Canada Student UAS Competition 2022"
+    img="/jellyfish.webp"
+    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    url="/projects/aerospace_national_competition"
+  />
+
+  <div class="divider my-0"></div>
+  <HorizontalCard
+    title="Brushless DC Motor"
+    img="/motor_stator.webp"
+    desc="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+    url="/projects/brushless_dc_motor"
+  />
+
+
+</BaseLayout>

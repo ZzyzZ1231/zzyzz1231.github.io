@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+---
+
+<BaseLayout title="Contact" sideBarActiveItemID="contact">
+  <div class="max-w-2xl">
+    <h1 class="text-3xl font-bold mb-6">Contact</h1>
+
+    <p class="mb-4">
+      Feel free to reach out regarding collaboration, internships, or
+      engineering opportunities.
+    </p>
+
+    <div class="space-y-3">
+      <div>
+        <span class="font-semibold">Email:</span>
+        <a href="mailto:your@email.com" class="underline ml-2">
+          your@email.com
+        </a>
+      </div>
+
+      <div>
+        <span class="font-semibold">LinkedIn:</span>
+        <a href="https://linkedin.com/in/YOUR_PROFILE" target="_blank" class="underline ml-2">
+          linkedin.com/in/YOUR_PROFILE
+        </a>
+      </div>
+
+      <div>
+        <span class="font-semibold">GitHub:</span>
+        <a href="https://github.com/YOUR_USERNAME" target="_blank" class="underline ml-2">
+          github.com/YOUR_USERNAME
+        </a>
+      </div>
+    </div>
+  </div>
+</BaseLayout>
