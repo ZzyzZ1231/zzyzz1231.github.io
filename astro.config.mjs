@@ -4,8 +4,7 @@ import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-  site: 'https://zzyzz1231.github.io',
-  base: '/capstone_website/',
+  site: 'https://ZzyzZ1231.github.io',
   integrations: [mdx(), tailwind()]
 });
 
